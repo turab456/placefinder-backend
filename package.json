@@ -2,11 +2,10 @@
   "name": "backend-placefinder",
   "version": "1.0.0",
   "description": "",
-  "main": "api/index.js",
+  "main": "app.js",
   "scripts": {
-    "dev": "nodemon api/index.js", 
-    "start": "node api/index.js",
-    "vercel-build": "echo 'No build step needed'",
+    "start": "node app.js",
+    "dev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -22,10 +21,8 @@
     "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.18.0",
     "mongoose": "^8.17.0",
+    "nodemon": "^3.1.10",
     "serverless-http": "^3.2.0",
     "xlsx": "^0.18.5"
-  },
-  "devDependencies": {
-    "nodemon": "^3.1.10"
   }
 }
