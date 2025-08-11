@@ -10,7 +10,7 @@ const placeSchema = new mongoose.Schema({
   state: { type: String, required: true },
   moodTags: { type: mongoose.Schema.Types.ObjectId, ref: 'Mood' },
   rating: { type: Number, min: 0, max: 5 },
-  imageUrl: String,
+  imageUrl: Array,
   description: String,
   lat: { type: Number, required: true },
   long: { type: Number, required: true },

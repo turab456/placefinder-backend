@@ -40,10 +40,10 @@ exports.ForwardLocation = async (req, res) => {
     try {
         const response = await axios.get('https://nominatim.openstreetmap.org/search', {
             params: {
-                q: `${address}, Bangalore`, // ✅ restrict to Bangalore
+                q: `${address} Bangalore`, // ✅ restrict to Bangalore
                 format: 'json',
                 addressdetails: 1,
-                limit: 1, // only first result
+                limit: 15, // only first result
                 countrycodes: 'in', // restrict to India
             },
             headers: {
