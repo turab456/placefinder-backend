@@ -12,6 +12,7 @@ const placeSchema = new mongoose.Schema({
   description: String,
   lat:Number,
   long:Number,
+  placeType: String, // e.g., "indoor", "outdoor"
 });
 
 module.exports = mongoose.model('Place', placeSchema);
